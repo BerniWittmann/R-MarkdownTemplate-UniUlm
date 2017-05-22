@@ -1,0 +1,38 @@
+---
+title: "TITEL_HIER_EINFUEGEN"
+author: "NAMEN_HIER_EINFUEGEN"
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+output:
+  html_document: default
+  pdf_document: default
+
+---
+<!-- Beginn des Headers -->
+<style>
+.text-center {
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+}
+
+#header_image {
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+</style>
+<br><br>
+<p class="text-center"><img id="header_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Uni_Ulm_Logo_Ausschnitt.svg/2000px-Uni_Ulm_Logo_Ausschnitt.svg.png"></p><br><br>
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(echo = TRUE) 
+# Um die Referenz zu externen Dateien zu korrigieren, hier das Root-Dir verändern
+knitr::opts_knit$set(root.dir = "../../../3. Semester/Statistik/Daten") 
+``` 
+<!-- Ende des Headers -->
+
+<!-- Beginn des Dokuments -->
+
+> Mein Inhalt kann hier ganz normal platziert werden.
